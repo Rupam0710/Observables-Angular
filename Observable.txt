@@ -1,0 +1,32 @@
+What is an Observable?
+
+ans. Observable are various data sources like (user Input) Events, Http Requests, Triggered in Code.
+
+It is an object that we import from a third party package, RxJs. 
+
+We have an observable and a observer. In between we have a stream, a timeline and on this timeline we can have multiple events emitted by 
+the observable or the data package emitted by the observable depending on the data source of that observable of course.
+
+Observable could emit data because you trigger it to do so.You can do that programmatically. It could be connected to a button. And therefore 
+whenever the button is clicked an event in a data package is emitted automatically or as the Angular Http service does it, its connected to
+an Http request. So when response returns ,it is emitted as a data package. And there are dozens of data sources too.
+
+
+The other part is the observer. We could actually say it is our code. It is the subscribe function that we saw in routing or atleast it has 
+something to do with that.
+
+You have 3 ways of handling data packages.
+1. You can handle the normal data.
+2. You can handle the error
+3. You can handle the completion of the observable.
+
+In this 3 hooks or boxes you can say we write the code that gets executed.
+So we could determine what should happen if receive the data, or if we receive an error. What should happen when the observale 
+eventually completes.
+
+There are some observables hooked up to a button that never completes because how would you know when it completes?
+Other observables like an http request will have a clear end and will complete actually.
+
+We use it to handle asynchronous tasks
+
+Observable has one major advantage. It is thier operator.
