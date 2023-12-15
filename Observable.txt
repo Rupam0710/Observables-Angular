@@ -30,3 +30,6 @@ Other observables like an http request will have a clear end and will complete a
 We use it to handle asynchronous tasks
 
 Observable has one major advantage. It is thier operator.
+
+2.What is a subject?
+Subject is an object you can subscribe to but its more active because you can actively call next on it from outside the observable. We use subjects for cross communication across components. We don't use subjects if we are using @Output with our own event .
